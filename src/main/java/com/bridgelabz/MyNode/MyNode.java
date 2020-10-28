@@ -9,12 +9,11 @@ public class MyNode<K> implements INode<K> {
 		this.next = null;
 	}
 
-	@Override
 	public K getKey() {
 		return key;
 	}
 
-	@Override
+
 	public void setKey(K key) {
 		this.key = key;
 	}
@@ -23,11 +22,10 @@ public class MyNode<K> implements INode<K> {
 		return next;
 	}
 
-	public void setNext(INode<K> next) {
+	public void setNext(INode next) {
 		this.next = next;
 	}
 
-	@Override
 	public String toString() {
 		StringBuilder myNodeString = new StringBuilder();
 		myNodeString.append("MyNode{" + "key=").append(key).append("}");

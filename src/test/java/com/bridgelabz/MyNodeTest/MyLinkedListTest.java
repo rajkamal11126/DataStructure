@@ -8,7 +8,7 @@ import com.bridgelabz.MyNode.MyNode;
 
 public class MyLinkedListTest {
 	@Test
-	public void givenThreeValues_WhenLinked_ShouldPassLinkedListTest() {
+	public void given3NmbersWhenLinkedShouldPassLinkedListTest() {
 		MyNode<Integer> myFirstNode = new MyNode<>(56);
 		MyNode<Integer> mySecondNode = new MyNode<>(30);
 		MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -38,7 +38,7 @@ public class MyLinkedListTest {
 		MyNode<Integer> myFirstNode = new MyNode<>(70);
 		MyNode<Integer> mySecondNode = new MyNode<>(30);
 		MyNode<Integer> myThirdNode = new MyNode<>(56);
-		MyLinkedList myLinkedList = new MyLinkedList();
+		MyLinkedList<Integer> myLinkedList = new MyLinkedList<>();
 		myLinkedList.append(myFirstNode);
 		myLinkedList.append(mySecondNode);
 		myLinkedList.append(myThirdNode);
