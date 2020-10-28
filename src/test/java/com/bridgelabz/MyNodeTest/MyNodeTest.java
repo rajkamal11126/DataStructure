@@ -7,7 +7,7 @@ import com.bridgelabz.MyNode.MyNode;
 
 public class MyNodeTest {
 	@Test
-	public void givenThreeValues_WhenLinked_ShouldPassLinkedListTest() {
+	public void given3Values_WhenLinked_ShouldPassLinkedListTest() {
 		MyNode<Integer> myFirstNode = new MyNode<>(56);
 		MyNode<Integer> mySecondNode = new MyNode<>(30);
 		MyNode<Integer> myThirdNode = new MyNode<>(70);
