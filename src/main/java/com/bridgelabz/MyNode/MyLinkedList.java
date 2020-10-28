@@ -9,20 +9,24 @@ public class MyLinkedList<K> {
 		this.tail = null;
 	}
 
+	// insert the node
 	public void insert(INode myNode, INode newNode) {
 		INode tempNode = myNode.getNext();
 		myNode.setNext(newNode);
 		newNode.setNext(tempNode);
 	}
 
+	// delete the node
 	public INode pop() {
 		INode tempNode = this.head;
 		this.head = this.head.getNext();
 		return tempNode;
 	}
+
+	// delete node from last
 	public INode popLast() {
 		INode tempNode = head;
-		while(!tempNode.getNext().equals(tail)) {
+		while (!tempNode.getNext().equals(tail)) {
 			tempNode = tempNode.getNext();
 		}
 		this.tail = tempNode;
@@ -30,6 +34,20 @@ public class MyLinkedList<K> {
 		return tempNode;
 	}
 
+	// search the node
+	public boolean search(INode searchnode) {
+		INode tempNode = this.head;
+		while (tempNode != head && tempNode.getNext() != this.tail) {
+			tempNode = tempNode.getNext();
+		}
+		if (tempNode == searchnode)
+			return true;
+		else
+			return false;
+
+	}
+
+	// adding the node
 	public void add(INode<K> newNode) {
 		if (this.tail == null) {
 			this.tail = newNode;

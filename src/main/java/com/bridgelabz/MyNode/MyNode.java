@@ -2,7 +2,8 @@ package com.bridgelabz.MyNode;
 
 public class MyNode<K> implements INode<K> {
 	private K key;
-	private INode<K> next;
+	INode<K> next;
+	public Object data;
 
 	public MyNode(K key) {
 		this.key = key;
@@ -12,7 +13,6 @@ public class MyNode<K> implements INode<K> {
 	public K getKey() {
 		return key;
 	}
-
 
 	public void setKey(K key) {
 		this.key = key;
@@ -29,8 +29,8 @@ public class MyNode<K> implements INode<K> {
 	public String toString() {
 		StringBuilder myNodeString = new StringBuilder();
 		myNodeString.append("MyNode{" + "key=").append(key).append("}");
-		if (next != null) 
+		if (next != null)
 			myNodeString.append("->").append(next);
-			return myNodeString.toString();
+		return myNodeString.toString();
 	}
 }

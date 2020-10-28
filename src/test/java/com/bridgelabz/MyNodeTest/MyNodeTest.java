@@ -5,7 +5,7 @@ import org.junit.Test;
 import com.bridgelabz.MyNode.MyNode;
 
 public class MyNodeTest {
-	// Adding three values
+	// Adding three nodes
 	@Test
 	public void given3ValuesWhenLinkedShouldPassLinkedListTest() {
 		MyNode<Integer> myFirstNode = new MyNode<>(56);
