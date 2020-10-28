@@ -2,12 +2,12 @@ package com.bridgelabz.MyNodeTest;
 
 import org.junit.Assert;
 import org.junit.Test;
-
 import com.bridgelabz.MyNode.MyNode;
 
 public class MyNodeTest {
+	// Adding three values
 	@Test
-	public void given3Values_WhenLinked_ShouldPassLinkedListTest() {
+	public void given3ValuesWhenLinkedShouldPassLinkedListTest() {
 		MyNode<Integer> myFirstNode = new MyNode<>(56);
 		MyNode<Integer> mySecondNode = new MyNode<>(30);
 		MyNode<Integer> myThirdNode = new MyNode<>(70);

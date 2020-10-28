@@ -21,9 +21,19 @@ public class MyLinkedList<K> {
 			this.head.setNext(tempNode);
 		}
 	}
-	public INode<K> pop(){
-		INode<K> tempNode = this.head;
-		this.head = head.getNext();
-		return tempNode;
+	//append the nodes 
+	public void append(MyNode newNode) {
+		if(this.head == null )
+			this.head = newNode;
+		if(this.tail == null)
+			this.tail = newNode;
+		else {
+			this.tail.setNext(newNode);
+			this.tail = newNode;	
+		}		
+	}
+	//print the nodes
+	public void printMyNodes() {
+		System.out.println("My Nodes: "+head);
 	}
 }
