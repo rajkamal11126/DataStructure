@@ -7,5 +7,5 @@ public interface INode<K> {
 
 	INode<K> getNext();
 
-	void setNext(INode<?> newNode);
+	void setNext(INode<K> newNode);
 }

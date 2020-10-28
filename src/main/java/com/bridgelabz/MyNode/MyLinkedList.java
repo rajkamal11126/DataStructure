@@ -15,9 +15,18 @@ public class MyLinkedList<K> {
 		newNode.setNext(tempNode);
 	}
 
-	public INode delete() {
+	public INode pop() {
 		INode tempNode = this.head;
 		this.head = this.head.getNext();
+		return tempNode;
+	}
+	public INode popLast() {
+		INode tempNode = head;
+		while(!tempNode.getNext().equals(tail)) {
+			tempNode = tempNode.getNext();
+		}
+		this.tail = tempNode;
+		tempNode = tempNode.getNext();
 		return tempNode;
 	}
 
